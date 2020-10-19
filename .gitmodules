@@ -1,0 +1,3 @@
+[submodule "/home/ahmad/projects/dotfiles/.vim/bundle/Apprentice"]
+	path = /home/ahmad/projects/dotfiles/.vim/bundle/Apprentice
+	url = git@github.com:romainl/Apprentice.git
