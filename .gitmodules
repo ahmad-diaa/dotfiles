@@ -1,6 +1,6 @@
-[submodule "/home/ahmad/projects/dotfiles/.vim/bundle/Apprentice"]
-	path = /home/ahmad/projects/dotfiles/.vim/bundle/Apprentice
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = git@github.com:preservim/nerdtree
+[submodule ".vim/bundle/Apprentice"]
+	path = .vim/bundle/Apprentice
 	url = git@github.com:romainl/Apprentice.git
-[submodule "/home/ahmad/projects/dotfiles/.vim/bundle/nerdtree"]
-	path = /home/ahmad/projects/dotfiles/.vim/bundle/nerdtree
-	url = git@github.com:preservim/nerdtree.git
