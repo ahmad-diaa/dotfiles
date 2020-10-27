@@ -10,5 +10,5 @@ configuration {
 	show-match: 		false;
 	separator-style: 	"solid";
 	hide-scrollbar: 	true;
-	theme:			"/home/ahmad/.config/.local/rofi/nord";
+	theme:			"$HOME/.config/.local/rofi/nord";
 	}
