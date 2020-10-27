@@ -23,7 +23,7 @@ for file in $files; do
     ln -s $dir/.$file ~/.$file
 done
 
-configs="kitty bspwm sxhkd polybar rofi picom neofetch bin dunst images"
+configs="kitty bspwm sxhkd polybar rofi picom neofetch bin dunst images .local"
 for cfg in $configs; do
      echo "Moving any existing dotfiles from ~/.config to $olddir/.config"
     mv ~/.config/$cfg $olddir/.config/
