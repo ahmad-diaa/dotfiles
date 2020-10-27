@@ -28,6 +28,6 @@ for cfg in $configs; do
      echo "Moving any existing dotfiles from ~/.config to $olddir/.config"
     mv ~/.config/$cfg $olddir/.config/
     echo "Creating symlink to $file in home directory."
-    ln -s $dir/.config/$cfg ~/.config/$cfg
+    ln -s $dir/.config/$cfg ~/.config/
 done
 
