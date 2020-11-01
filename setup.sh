@@ -31,6 +31,8 @@ for cfg in $configs; do
     ln -s $dir/.config/$cfg ~/.config/
 done
 
-echo "Moving existing oh-my-zsh plugins to $olddir"
-mv ~/.oh-my-zsh/custom $olddir/oh-my-zsh-plugins
-ln -s $dir/oh-my-zsh-plugins/custom/ ~/.oh-my-zsh/custom/
+echo "Moving existing oh-my-zsh plugins to $olddir/oh-my-zsh-plugins"
+mv ~/.oh-my-zsh/custom/plugins/* $olddir/oh-my-zsh-plugins/
+for filename in $dir/oh-my-zsh-plugins/*; do
+    ln -s $filename ~/.oh-my-zsh/custom/plugins/    
+done
