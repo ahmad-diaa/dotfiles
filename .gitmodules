@@ -4,3 +4,10 @@
 [submodule ".vim/bundle/Apprentice"]
 	path = .vim/bundle/Apprentice
 	url = git@github.com:romainl/Apprentice.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = git@github.com:ohmyzsh/ohmyzsh.git
+
+[submodule "oh-my-zsh-plugins/custom/plugins/zsh-syntax-highlighting"]
+	path = oh-my-zsh-plugins/custom/plugins/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting.git

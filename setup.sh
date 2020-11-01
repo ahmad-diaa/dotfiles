@@ -8,7 +8,7 @@
 
 dir=~/projects/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="zshrc zprofile vimrc vim Xresources xinitrc"    # list of files/folders to symlink in homedir
+files="oh-my-zsh zshrc zprofile vimrc vim Xresources xinitrc"    # list of files/folders to symlink in homedir
 
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"
@@ -31,3 +31,6 @@ for cfg in $configs; do
     ln -s $dir/.config/$cfg ~/.config/
 done
 
+echo "Moving existing oh-my-zsh plugins to $olddir"
+mv ~/.oh-my-zsh/custom $olddir/oh-my-zsh-plugins
+ln -s $dir/oh-my-zsh-plugins/custom/ ~/.oh-my-zsh/custom/
