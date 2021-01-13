@@ -1,0 +1,15 @@
+consolas-font
+google-chrome
+i3lock-color
+nerd-fonts-hack
+nerd-fonts-jetbrains-mono
+otf-symbola
+picom-ibhagwan-git
+polybar
+spotify
+ttf-material-design-icons
+ttf-ms-fonts
+ttf-symbola
+ttf-symbola-infinality
+xflux
+xorg-luit
