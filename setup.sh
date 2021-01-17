@@ -25,7 +25,7 @@ done
 
 configs="kitty bspwm sxhkd polybar rofi picom neofetch bin dunst images .local"
 for cfg in $configs; do
-     echo "Moving any existing dotfiles from ~/.config to $olddir/.config"
+    echo "Moving any existing dotfiles from ~/.config to $olddir/.config"
     mv ~/.config/$cfg $olddir/.config/
     echo "Creating symlink to $file in home directory."
     ln -s $dir/.config/$cfg ~/.config/
@@ -36,3 +36,8 @@ mv ~/.oh-my-zsh/custom/plugins/* $olddir/oh-my-zsh-plugins/
 for filename in $dir/oh-my-zsh-plugins/*; do
     ln -s $filename ~/.oh-my-zsh/custom/plugins/    
 done
+
+
+echo "Moving fonts to $olddir/.fonts"
+sudo mv /usr/share/fonts $olddir/.fonts
+sudo ln -s $dir/.fonts /usr/share/fonts
