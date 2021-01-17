@@ -10,6 +10,4 @@ spotify
 ttf-material-design-icons
 ttf-ms-fonts
 ttf-symbola
-ttf-symbola-infinality
 xflux
-xorg-luit

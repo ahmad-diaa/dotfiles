@@ -64,9 +64,9 @@ type = internal/bspwm
 format = <label-state>
 
 ws-icon-0 = I;%{T4}%{T4}
-ws-icon-1 = II;%{T2}%{T2}
-ws-icon-2 = III;%{T2}%{T2} 
-ws-icon-default = %{T2}%{T-} 
+ws-icon-1 = II;%{T4}%{T4}
+ws-icon-2 = III;%{T2}%{T3} 
+ws-icon-default = %{T3}%{T3} 
 
 label-focused-occupied = %icon%
 label-focused-occupied-foreground = #02c084
@@ -139,7 +139,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp9s0b1
+interface = wlan0
 interval = 3.0
 
 format-connected = <label-connected>
