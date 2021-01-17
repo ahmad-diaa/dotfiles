@@ -52,12 +52,13 @@ XF86AudioMute
 
 # screen brightness
 XF86MonBrightnessDown
-    light -U 10 && notify-send "󰃞 Light" "Brightness: $(light)"
+    xbacklight -dec 10; \
+    cat /sys/class/backlight/intel_backlight/actual_brightness
 
 
 XF86MonBrightnessUp
-    light -A 10 && notify-send "󰃞 Light" "Brightness: $(light)"
-
+    xbacklight -inc 10; \ 
+    cat /sys/class/backlight/intel_backlight/actual_brightness
 # pause audio
 XF86AudioStop
 	mpc pause

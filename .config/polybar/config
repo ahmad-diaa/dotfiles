@@ -100,11 +100,11 @@ label-empty-padding = 1
 
 [module/backlight]
 type = internal/backlight
-card = radeon_bl0
+card = intel_backlight
 
 format = <label>
 
-label = "  %percentage%%"
+label = " %percentage%%"
 label-foreground = ${colors.tertiary}
 
 bar-width = 10
@@ -199,7 +199,7 @@ format-charging = <ramp-capacity> <label-charging>
 format-charging-underline = #ffb52a
 format-discharging = <ramp-capacity> <label-discharging>
 
-format-full-prefix = ""
+format-full-prefix = "  "
 format-full-prefix-foreground = ${colors.foreground-alt}
 
 ramp-capacity-0 = 
