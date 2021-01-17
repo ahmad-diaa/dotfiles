@@ -8,7 +8,7 @@ secondary = #5ad2e3
 tertiary = #d07ef2
 fourth = #f57e47
 alert = #ed404c
-
+yellow = #ffff00
 
 
 [bar/main]
@@ -36,7 +36,7 @@ font-4 = icomoon:size=17;3
 
 modules-left = bspwm
 modules-center = xwindow
-modules-right = backlight audio wlan battery date powermenu
+modules-right = bluetooth backlight audio wlan battery date powermenu
 
 tray-position = none
 
@@ -159,6 +159,14 @@ ramp-signal-3 = d
 ramp-signal-4 = e
 ramp-signal-foreground = ${colors.foreground-alt}
 
+[module/bluetooth]
+type = custom/script
+exec = "bluetoothctl paired-devices | cut -d' ' -f2 | xargs -i -n1 bash -c "bluetoothctl info {} | grep -q 'Connected: yes' && bluetoothctl info {} | grep -o 'Alias: .*'" | awk -vORS=', ' '{sub($1 OFS,"")}1' | sed -e 's/, $//'"
+exec-if = "[ $(bluetoothctl show | grep 'Powered: yes' | wc -l) -gt 0 ]"
+interval = 5
+click-right = blueman-manager &
+format-prefix = " "
+format-foreground= ${colors.yellow}
 
 [module/date]
 type = internal/date

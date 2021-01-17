@@ -6,8 +6,8 @@ i3lock --nofork                 \
     --keyhlcolor=88c0d0ff       \
     --bshlcolor=d8dee9ff	\
     --separatorcolor=00000000   \
-    --radius=40			\
-    --indpos="100:680"		\
+    --radius=60			\
+    --indpos="100:950"		\
     \
     --insidevercolor=00000000	\
     --insidewrongcolor=00000000 \
@@ -21,19 +21,19 @@ i3lock --nofork                 \
     --timecolor=eceff4ff	\
     --timestr="%H:%M"		\
     --time-font="JetBrains Mono Nerd Font"	\
-    --timesize=40		\
-    --timepos="215:690"		\
+    --timesize=60		\
+    --timepos="270:960"		\
     \
     --datecolor=d8dee9ff	\
     --datestr="%A, %d %B"	\
     --date-font="JetBrains Mono Nerd Font"	\
-    --datesize=25		\
-    --datepos="305:715"	\
+    --datesize=35		\
+    --datepos="370:1000"	\
     \
     --veriftext=""		\
     --wrongtext=""		\
     \
     --indicator			\
     \
-    --image=$HOME/.config/images/lock.png
+    --image=$HOME/.config/images/lock.jpg
 
