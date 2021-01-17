@@ -38,6 +38,6 @@ for filename in $dir/oh-my-zsh-plugins/*; do
 done
 
 
-echo "Moving fonts to $olddir/.fonts"
-sudo mv /usr/share/fonts $olddir/.fonts
-sudo ln -s $dir/.fonts /usr/share/fonts
+echo "Moving own fonts to $olddir/.fonts"
+mv /usr/share/fonts/TTF/icomoon.ttf $olddir/.fonts/TTF/icomoon.ttf
+sudo ln -s $dir/fonts/TTF/icomoon.ttf /usr/share/fonts/TTF/
